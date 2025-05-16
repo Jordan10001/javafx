@@ -6,6 +6,9 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import Alert.ErrorAlert;
+
+import static Alert.ErrorAlert.showAlert;
 
 
 public class HelloController {
@@ -40,9 +43,5 @@ public class HelloController {
         }
     }
 
-    private void showAlert(String message) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setContentText(message);
-        alert.show();
-    }
+
 }
